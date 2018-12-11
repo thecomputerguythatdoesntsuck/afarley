@@ -1,9 +1,17 @@
+@font-face {
+    font-family: 'Rock Salt';
+    src: url('../webfonts/RockSalt-Regular.ttf')
+}
 html {
-    background: no-repeat url('bg.jpg') center center fixed;
+    background: no-repeat url('../bg.jpg') center center fixed;
     background-size: cover;
+    font-size: 62.5%;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 }
 body {
-
+    font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.6;
     color: white;
 }
 .header {
@@ -12,6 +20,9 @@ body {
     text-align: center;
 }
 .header h1 {
+    font-size: 4.0rem; 
+    line-height: 1.2;
+    letter-spacing: -.1rem;
     text-shadow: 0px -1px 5px rgba(0,0,0,0.5);
     margin: 0;
     margin-bottom: 2rem;
@@ -19,6 +30,7 @@ body {
     font-family: 'Rock Salt';
 }
 .header p {
+    margin-top: 0;
     margin-bottom: 0;
     text-shadow: 0px -1px 2px rgba(0,0,0,0.5);
 }
@@ -41,4 +53,7 @@ body {
 .header p a:visited {
     color: white;
     text-decoration: none;
+}
+.header p a svg {
+    box-shadow: 0px -1px 2px rgba(0,0,0,0.2);
 }
